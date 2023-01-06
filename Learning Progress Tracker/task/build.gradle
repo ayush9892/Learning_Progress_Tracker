@@ -1,0 +1,14 @@
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.9.0'
+    implementation group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.30'
+}
+
+test {
+    useJUnitPlatform()
+}
